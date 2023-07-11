@@ -4,10 +4,18 @@
         <head>
             <title>홍상혁의 HTML 공부</title>
         </head>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-709QGK08TB"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
+            gtag('config', 'G-709QGK08TB');
+            </script>
         <body>
             <!-- [글자 두껍게 태그: <strong>] [밑줄 태그: <u>]-->
-            안녕하세요. <strong>홍상혁의 HTML <u>개발</u> 공부</strong>용 페이지다~
+            <h1>안녕하세요. <strong>홍상혁의 HTML <u>개발</u> 공부</strong>용 페이지다~</h1>
 
             <!-- [글자 크기 위계: <h1> , <h2> , <h3> , <h4> , <h5> , <h6>]-->
             <h1> h1 글자 </h1>
@@ -51,5 +59,50 @@
         
             <!-- 페이지 연결하기-->
             <a href="page1.html">페이지 1로 가는 링크</a>
+
+            <!-- 유튜브 동영상 iframe으로 imbed 하기: 유튜브 공유하기 - 퍼가기를 눌러서 복붙하면 됨-->
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+
+            <!-- 댓글 기능 추가하기 (Disqus라는 서비스를 이용해서)-->
+            <p> 
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://my-first-we.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </p>
+
+
+            <p>
+                <!--Start of Tawk.to Script-->
+                <script type="text/javascript">
+                    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                    (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/64ad27fbcc26a871b027afc5/1h5268c47';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                    })();
+                    </script>
+                <!--End of Tawk.to Script-->
+            </p>
         </body>
     </html>
